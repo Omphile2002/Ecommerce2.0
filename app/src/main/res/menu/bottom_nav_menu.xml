@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_stat_name"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_buying"
+        android:icon="@drawable/ic_buying_black_mine_24dp"
+        android:title="@string/title_buying" />
+
+    <item
+        android:id="@+id/navigation_selling"
+        android:icon="@drawable/ic_selling_black_mine_24dp"
+        android:title="Selling" />
+
+    <item
+        android:id="@+id/navigation_signout"
+        android:icon="@drawable/ic_signout_black_mine_24dp"
+        android:title="Signout" />
+
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ecommerce2</string>
+    <string name="title_home">Home</string>
+    <string name="title_buying">Buying</string>
+    <string name="title_selling">Selling</string>
+    <string name="title_signout">Sign Out</string>
+</resources>
