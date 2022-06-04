@@ -4,4 +4,12 @@
     <string name="title_buying">Buying</string>
     <string name="title_selling">Selling</string>
     <string name="title_signout">Sign Out</string>
+
+    <string-array name="categories">
+        <item>Electronic</item>
+        <item>Clothing</item>
+        <item>Textbooks</item>
+        <item>Supplies</item>
+        <item>Other</item>
+    </string-array>
 </resources>

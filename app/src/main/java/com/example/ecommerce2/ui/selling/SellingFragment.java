@@ -31,8 +31,6 @@ public class SellingFragment extends Fragment {
         //final TextView textView = binding.textSelling;
         //sellingViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
-
-
     }
 
     @Override

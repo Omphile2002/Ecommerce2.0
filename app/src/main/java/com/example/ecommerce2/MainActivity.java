@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar=findViewById(R.id.myToolBar);
         setSupportActionBar(toolbar);
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu){

@@ -7,9 +7,12 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.11149228130360206" />
         <entry key="app/src/main/res/layout/appBar.xml" value="0.182518115942029" />
         <entry key="app/src/main/res/layout/appbar.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/fragment_buying.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.15723571777343753" />
-        <entry key="app/src/main/res/layout/fragment_selling.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/fragment_selling.xml" value="0.26934051513671875" />
         <entry key="app/src/main/res/layout/fragment_signout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/product_category.xml" value="0.24286753336588549" />
+        <entry key="app/src/main/res/layout/selling_item.xml" value="0.1593673706054688" />
         <entry key="app/src/main/res/layout/selling_items.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.22" />
