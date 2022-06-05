@@ -17,8 +17,15 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.test.espresso.IdlingRegistry;
+import androidx.test.espresso.IdlingResource;
 
 import com.example.ecommerce2.databinding.ActivityMainBinding;
+import com.jakewharton.picasso.OkHttp3Downloader;
+import com.squareup.picasso.Picasso;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,13 +53,19 @@ public class MainActivity extends AppCompatActivity {
         toolbar=findViewById(R.id.myToolBar);
         setSupportActionBar(toolbar);
 
+        OkHttpClient client = new OkHttpClient();
+
+        Request request = new Request.Builder()
+                .url("https://lamp.ms.wits.ac.za/~s2438571/ecommerce.php")
+                .build();
+
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.menu,menu);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
 
-        MenuItem.OnActionExpandListener onActionExpandListener=new MenuItem.OnActionExpandListener() {
+        MenuItem.OnActionExpandListener onActionExpandListener = new MenuItem.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {
                 Toast.makeText(MainActivity.this, "Search is Expanded", Toast.LENGTH_SHORT).show();
@@ -72,6 +85,17 @@ public class MainActivity extends AppCompatActivity {
         //searchView.setQueryHint("Search Item here...");
 
         return true;
+
+    }
+
+    public static class OkSingleton extends OkHttpClient {
+        private static class LazyHolder {
+            private static final OkSingleton instance = new OkSingleton();
+        }
+
+        public static OkSingleton getInstance() {
+            return LazyHolder.instance;
+        }
     }
 
 
